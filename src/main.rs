@@ -78,6 +78,38 @@ fn main() {
     framebuffer.fill_polygon(&poly3);
 
 
+    //Polígono 4 (Tetera)
+
+    framebuffer.set_current_color(Color::white());
+
+    let poly4 = vec![
+        (413, 177),
+        (448, 159),
+        (502, 88),
+        (553, 53),
+        (535, 36),
+        (676, 37),
+        (660, 52),
+        (750, 145),
+        (761, 179),
+        (672, 192),
+        (659, 214),
+        (615, 214),
+        (632, 230),
+        (580, 230),
+        (597, 215),
+        (552, 214),
+        (517, 144),
+        (466, 180)
+    ];
+
+    framebuffer.polygon(&poly4);
+
+    framebuffer.set_current_color(Color::green());
+    framebuffer.fill_polygon(&poly4);
+
+
+
     //Renderizar el Framebuffer para crear imágen
     let _ = framebuffer.render_buffer("output.bmp");
     // Imprimir un mensaje indicando que el framebuffer se ha renderizado
