@@ -61,6 +61,23 @@ fn main() {
     framebuffer.fill_polygon(&poly2);
 
 
+    //Polígono 3
+
+    framebuffer.set_current_color(Color::white());
+
+    let poly3 = vec![
+        
+        (377, 249),
+        (411, 197),
+        (436, 249)
+    ];
+
+    framebuffer.polygon(&poly3);
+
+    framebuffer.set_current_color(Color::red());
+    framebuffer.fill_polygon(&poly3);
+
+
     //Renderizar el Framebuffer para crear imágen
     let _ = framebuffer.render_buffer("output.bmp");
     // Imprimir un mensaje indicando que el framebuffer se ha renderizado
