@@ -22,6 +22,8 @@ fn main() {
     // Create a framebuffer
     let mut framebuffer = Framebuffer::new(800, 600);
 
+    framebuffer.set_current_color(Color::white());
+
     // Define the vertices of a polygon
     let poly1 = vec![
         (165, 380), (185, 360), (180, 330), 
@@ -34,7 +36,7 @@ fn main() {
     framebuffer.polygon(&poly1);
 
     // Set the current drawing color to purple
-    framebuffer.set_current_color(Color::purple().to_u32());
+    framebuffer.set_current_color(Color::purple());
 
     // Fill the polygon on the framebuffer
     framebuffer.fill_polygon(&poly1);
