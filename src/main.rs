@@ -109,6 +109,19 @@ fn main() {
     framebuffer.fill_polygon(&poly4);
 
 
+    //Polígono 5 (Agujero del polígono 4)
+
+    framebuffer.set_current_color(Color::white());
+
+    let poly5 = vec![
+        (682, 175 ),(708, 120 ),(735, 148 ), (739, 170)
+    ];
+
+    framebuffer.polygon(&poly5);
+
+    framebuffer.set_current_color(Color::black());
+    framebuffer.fill_polygon(&poly5);
+
 
     //Renderizar el Framebuffer para crear imágen
     let _ = framebuffer.render_buffer("output.bmp");
