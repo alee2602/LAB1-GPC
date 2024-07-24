@@ -46,11 +46,11 @@ fn main() {
 }
 ```
 ## Branch Information
-The main branch is empty, but you can find the code and outputs in the following branches:
 
-- **Polygon-1**
-- **Polygon-2**
-- **Polygon-3**
-- **Polygon-4**
+You can see all four polygons together in the `main` branch. Each branch contains different stages of the implementation:
+- `Poligon-1`
+- `Poligon-2`
+- `Poligon-3`
+- `Poligon-4`
 
 Each branch contains specific implementations and the resulting output.bmp
