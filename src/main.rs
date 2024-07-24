@@ -21,8 +21,7 @@ fn main() {
 
 
     //Polígono 1
-    // Configurar el color para el contorno
-    framebuffer.set_current_color(Color::white());
+
 
     // Definir los vértices de un polígono
 
@@ -33,20 +32,19 @@ fn main() {
         (193, 383)
     ];
 
-    // Dibujar el polígono en el framebuffer
-    framebuffer.polygon(&poly1);
-
     // Configurar el color para rellenar el polígono
     framebuffer.set_current_color(Color::yellow());
-
     // Rellenar el polígono en el framebuffer
     framebuffer.fill_polygon(&poly1);
 
+    // Configurar el color para el contorno
+    framebuffer.set_current_color(Color::white());
+    // Dibujar el polígono en el framebuffer
+    framebuffer.polygon(&poly1);
+
+
 
     //Polígono 2
-
-    framebuffer.set_current_color(Color::white());
-
     let poly2 = vec![
         
         (321, 335),
@@ -55,15 +53,14 @@ fn main() {
         (374, 302)
     ];
 
-    framebuffer.polygon(&poly2);
-
     framebuffer.set_current_color(Color::blue());
     framebuffer.fill_polygon(&poly2);
 
+    framebuffer.set_current_color(Color::white());
+    framebuffer.polygon(&poly2);
+
 
     //Polígono 3
-
-    framebuffer.set_current_color(Color::white());
 
     let poly3 = vec![
         
@@ -72,15 +69,14 @@ fn main() {
         (436, 249)
     ];
 
-    framebuffer.polygon(&poly3);
-
     framebuffer.set_current_color(Color::red());
     framebuffer.fill_polygon(&poly3);
+    
+    framebuffer.set_current_color(Color::white());
+    framebuffer.polygon(&poly3);
 
 
     //Polígono 4 (Tetera)
-
-    framebuffer.set_current_color(Color::white());
 
     let poly4 = vec![
         (413, 177),
@@ -103,24 +99,25 @@ fn main() {
         (466, 180)
     ];
 
-    framebuffer.polygon(&poly4);
-
     framebuffer.set_current_color(Color::green());
     framebuffer.fill_polygon(&poly4);
+
+    framebuffer.set_current_color(Color::white());
+    framebuffer.polygon(&poly4);
+
 
 
     //Polígono 5 (Agujero del polígono 4)
 
-    framebuffer.set_current_color(Color::white());
-
     let poly5 = vec![
         (682, 175 ),(708, 120 ),(735, 148 ), (739, 170)
     ];
-
-    framebuffer.polygon(&poly5);
-
+    
     framebuffer.set_current_color(Color::black());
     framebuffer.fill_polygon(&poly5);
+
+    framebuffer.set_current_color(Color::white());
+    framebuffer.polygon(&poly5);
 
 
     //Renderizar el Framebuffer para crear imágen
