@@ -21,8 +21,7 @@ fn main() {
 
 
     //Polígono 1
-    // Configurar el color para el contorno
-    framebuffer.set_current_color(Color::white());
+
 
     // Definir los vértices de un polígono
 
@@ -33,20 +32,19 @@ fn main() {
         (193, 383)
     ];
 
-    // Dibujar el polígono en el framebuffer
-    framebuffer.polygon(&poly1);
-
     // Configurar el color para rellenar el polígono
     framebuffer.set_current_color(Color::yellow());
-
     // Rellenar el polígono en el framebuffer
     framebuffer.fill_polygon(&poly1);
 
+    // Configurar el color para el contorno
+    framebuffer.set_current_color(Color::white());
+    // Dibujar el polígono en el framebuffer
+    framebuffer.polygon(&poly1);
+
+
 
     //Polígono 2
-
-    framebuffer.set_current_color(Color::white());
-
     let poly2 = vec![
         
         (321, 335),
@@ -55,10 +53,11 @@ fn main() {
         (374, 302)
     ];
 
-    framebuffer.polygon(&poly2);
-
     framebuffer.set_current_color(Color::blue());
     framebuffer.fill_polygon(&poly2);
+
+    framebuffer.set_current_color(Color::white());
+    framebuffer.polygon(&poly2);
 
 
     //Renderizar el Framebuffer para crear imágen
