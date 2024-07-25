@@ -48,9 +48,9 @@ fn main() {
 ## Branch Information
 
 You can see all four polygons together in the `main` branch. Each branch contains different stages of the implementation:
-- `Poligon-1`
-- `Poligon-2`
-- `Poligon-3`
-- `Poligon-4`
+- `Polygon-1`
+- `Polygon-2`
+- `Polygon-3`
+- `Polygon-4`
 
 Each branch contains specific implementations and the resulting output.bmp
